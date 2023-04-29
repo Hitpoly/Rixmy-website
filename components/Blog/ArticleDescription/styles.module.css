@@ -1,0 +1,126 @@
+.blog_single {
+    background-color: #fff;
+}
+
+.blog_single_banner {
+    height: 650px;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 575px) {
+    .blog_single_banner {
+        height: 340px;
+        padding: 100px 0 80px;
+    }
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    background: rgba(20, 21, 25, 0.8);
+}
+
+.banner_content {
+    text-align: center;
+    max-width: 1000px;
+    position: relative;
+    z-index: 1;
+}
+
+.banner_content h1 {
+    color: #fff;
+    font-size: 25px;
+    line-height: 2rem;
+    font-weight: 900;
+}
+
+.banner_content p a,
+.banner_content p {
+    color: #f43534;
+    text-transform: capitalize;
+    font-size: 17px;
+    margin-top: 24px;
+}
+
+.single_content {
+    padding: 50px 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: justify;
+    position: relative;
+}
+
+.single_content h1 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.single_content p {
+    padding-top: 20px;
+    padding-bottom: 25px;
+    font-size: 17px;
+    line-height: 1.5rem;
+}
+
+.single_content img {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.single_content blockquote {
+    background: #18191d;
+    padding: 25px 40px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 0 14px 6px #111113;
+    border-left: 2px solid #acacac;
+    margin-bottom: 25px;
+}
+
+.single_content blockquote h4 {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.single_content blockquote .author {
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-top: 23px;
+    display: block;
+    text-align: right;
+    color: #f43534;
+}
+
+.container {
+    width: 100%;
+    padding: 0 20px;
+    margin: auto;
+}
+
+@media (min-width: 1024px) {
+    .single_content {
+        padding: 110px 30px;
+        max-width: 1000px;
+        margin: 0 auto;
+        text-align: justify;
+        position: relative;
+    }
+
+    .banner_content h1 {
+        color: #fff;
+        font-size: 50px;
+        line-height: 3.5rem;
+        font-weight: 900;
+    }
+}

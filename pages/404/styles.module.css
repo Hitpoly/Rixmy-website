@@ -1,0 +1,23 @@
+
+.container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.max_title h1 {
+    font-size: 200px;
+    margin: 0;
+    font-weight: 900;
+    height: 280px;
+}
+
+
+
+.max_title h1,
+.container h2,
+.container p {
+    color: white;
+}

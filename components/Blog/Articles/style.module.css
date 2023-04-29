@@ -1,0 +1,19 @@
+.section_blog {
+    background-color: #1E1E1E;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media (min-width: 1024px) {
+    .section_blog {
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        display: grid;
+        gap: 50px;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}

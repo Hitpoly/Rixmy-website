@@ -1,0 +1,127 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* 
+******************************
+** 1) Configuración general **
+******************************/
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --red: #E03138;
+  --white: #fff;
+  --black: #000;
+  --gray: #1a1a1a;
+}
+
+/* @font-face {
+  font-family: "Montserrat-Black";
+  src: url(/fonts/Montserrat-Black.otf);
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url(/fonts/Montserrat-Medium.otf);
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url(/fonts/Montserrat-light.otf);
+}
+
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url(/fonts/Montserrat-SemiBold.otf);
+} */
+
+
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.6em;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--red);
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--gray);
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a a:focus,
+a:hover {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+form,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+label,
+input,
+textarea,
+select,
+button {
+  display: inline;
+  resize: none;
+  outline: none;
+  vertical-align: middle;
+}
+
+body>div {
+  padding-left: 90px;
+}
+
+@media (max-width: 768px) {
+  body>div {
+    padding-left: 0;
+  }
+}

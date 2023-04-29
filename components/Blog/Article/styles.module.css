@@ -1,0 +1,125 @@
+/* CARD DE UN ARTICULO */
+.single_blog {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.single_blog .title {
+    background: transparent;
+    width: 500px;
+}
+
+.single_blog .featured_img img {
+    width: 100%;
+}
+
+.single_blog .date {
+    background: var(--red);
+    display: block;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+    z-index: 1;
+    padding: 8px 12px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.single_blog .date small {
+    display: block;
+    line-height: normal;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.single_blog .post_title {
+    padding: 25px 0;
+    text-align: left;
+}
+
+.single_blog .post_title h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.single_blog .post_title a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.single_blog .post_title p {
+    color: rgb(255, 255, 255, .5);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.single_blog .like_comment {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    border-top: 1px solid #35373d;
+    position: relative;
+}
+
+.single_blog .like_comment .read_more:hover {
+    background: var(--red);
+    border-color: var(--red);
+}
+
+.single_blog .like_comment .read_more {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #35373d;
+    display: flex;
+    border-radius: 100%;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -26px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #26272a;
+}
+
+.single_blog .like_comment span {
+    color: #8b8a8a;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.single_blog .like_comment span svg {
+    height: 18px;
+    margin-right: 8px;
+}
+
+
+@media (min-width: 1024px) {
+    .single_blog .date {
+        padding: 15px 23px;
+        font-size: 20px;
+    }
+
+    .single_blog .post_title h3 {
+        font-size: 23px;
+        line-height: 35px;
+    }
+
+    /* .single_blog .post_title {
+        padding: 24px 30px 50px;
+    } */
+
+}

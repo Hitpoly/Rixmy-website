@@ -1,0 +1,85 @@
+/*****************************
+  ********* 9) Footer **********
+  *****************************/
+
+.footer {
+  position: relative;
+  background: var(--white);
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--red);
+}
+
+.footer div:nth-child(2n) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.footer ul:first-child {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  font-size: 25px;
+}
+
+.footer ul:nth-child(2n) {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 9px;
+  margin: 15px 0;
+  font-size: 12px;
+}
+
+.footer a {
+  color: var(--red);
+  font-family: "Montserrat-Regular";
+  font-size: 14px;
+
+}
+
+.footer ul hr {
+  background: var(--red);
+  border: none;
+  width: 1px;
+}
+
+.p {
+  font-size: 13px;
+  text-align: center;
+
+}
+
+
+@media (max-width: 768px) {
+  .footer {
+    display: block;
+  }
+
+  .footer img {
+    margin: auto;
+  }
+
+  .footer ul:first-child {
+    margin: 25px 0;
+  }
+
+  .footer div:nth-child(2n),
+  .footer ul:nth-child(2n) li {
+    width: 100%;
+    justify-content: space-around;
+    font-size: 13px;
+    display: flex;
+  }
+
+  .hr {
+    display: none;
+  }
+
+}
